@@ -1,38 +1,91 @@
 .App {
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+    margin: 0;
+    color: #998367;
+    font-weight: 100;
+    font-size: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.toDoLists {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.toDo {
+    margin: 20px;
+    min-width: 550px;
 }
 
-.App-link {
-  color: #61dafb;
+.paper {
+    padding: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.addTaskBlock {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.arrow {
+    position: relative;
+    top: 8px;
+    left: 8px;
+    margin-right: 16px;
+}
+
+.addTaskInput {
+    border: none;
+    font-size: 1em;
+    font-style: italic;
+    outline: none;
+    opacity: 50%;
+}
+
+.error {
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.toDoFilters {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+}
+
+.filter {
+    font-size: 0.8em;
+    border: none;
+    background-color: #fff;
+}
+
+.active {
+    border: 1px solid #998367;
+}
+
+.clear {
+    font-size: 0.8em;
+    border: none;
+    background-color: #fff;
+}
+
+.tasks {
+    margin-bottom: 5px;
+}
+
+.task {
+    margin: 0;
+}
+
+.completed {
+    opacity: 50%;
+    text-decoration: line-through;
+}
+
+hr {
+    margin: 0;
 }
